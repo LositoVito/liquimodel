@@ -1,8 +1,9 @@
 const path = require('path');
 module.exports = {
   mode: 'production',
-  entry: 'liquimodel.js',
+  entry: './src/liquimodel.js',
   output: {
+    path: path.resolve(__dirname),
     filename: 'liquimodel.js',
     libraryTarget: 'commonjs2',
   },

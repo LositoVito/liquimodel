@@ -12,13 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url" : "https://github.com/LositoVito/liquimodel.git"
+    "url": "https://github.com/LositoVito/liquimodel.git"
   },
-  "keywords": [],
-  "description": "",
+  "keywords": [
+    "react",
+    "MVVM",
+    "liquibase"
+  ],
+  "description": "A series of utilities to implement MVVM pattern in React with a generic model without the need to define its structure",
   "dependencies": {
-    "react": "^17.0.2",
-    "lodash": "^4.17.21"
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-stage-0": "^7.8.3"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -26,9 +32,9 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.24.1",
+    "lodash": "^4.17.21",
     "path": "^0.12.7",
     "react": "^17.0.2",
-    "lodash": "^4.17.21",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   }
