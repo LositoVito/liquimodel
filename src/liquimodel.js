@@ -1,3 +1,12 @@
+/**
+ * Liquimodel, a series of utilities to implement MVVM pattern in react with a generic model without the need to define its structure 
+ *
+ * @version 0.0.1
+ * @author [Vito Losito](https://github.com/LositoVito)
+ * Linkedin: https://it.linkedin.com/in/vito-losito
+ * License: CC BY-ND 4.0
+ */
+
 import _ from "lodash";
 import { useState } from "react";
 
