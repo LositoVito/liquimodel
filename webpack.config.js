@@ -1,9 +1,10 @@
 const path = require('path');
+var webpack = require('webpack');
 module.exports = {
   mode: 'production',
   entry: './src/liquimodel.js',
   output: {
-    path: path.resolve(__dirname),
+    path: path.resolve('lib'),
     filename: 'liquimodel.js',
     libraryTarget: 'commonjs2',
   },
@@ -22,6 +23,11 @@ module.exports = {
       'lodash': path.resolve(__dirname, './node_modules/lodash')
     }
   },
+  plugins: [
+      new webpack.ProvidePlugin({
+          "_": "lodash"
+      })
+  ],
   externals: {
     react: {
       commonjs: "react",
@@ -31,6 +37,7 @@ module.exports = {
     },
     lodash: {
       commonjs: 'lodash',
+      commonjs2: 'lodash',
       amd: 'lodash',
       root: '_'
     }

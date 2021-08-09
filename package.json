@@ -1,7 +1,7 @@
 {
   "name": "liquimodel",
   "version": "0.0.1",
-  "main": "liquimodel.js",
+  "main": "./lib/liquimodel.js",
   "scripts": {
     "build": "webpack"
   },
@@ -21,6 +21,8 @@
   ],
   "description": "A series of utilities to implement MVVM pattern in React with a generic model without the need to define its structure",
   "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
